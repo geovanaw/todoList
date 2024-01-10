@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-profile {
+    width: 15%;
+    max-height: 100%;
+    background-color: #FAF7FF;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+aside h1 { 
+    color:#512D6D;
+    border-bottom: dotted #D3D0E3;
+}
+
+aside p {
+    max-width: fit-content;
+    text-align: justify;
+    margin: 0 16px 50px;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 15px;
+    background-color: #512D6D;
+    text-align: center;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+nav li:hover {
+    background-color: #D63484;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    padding: 15px; 
+    text-decoration: none;
+    list-style: none;
+}
+
+/*-----main----------*/
+
+.task-list {
+    width: 85%;
+    max-height: 100%;
+    background-color: #EEE;
+    align-items: center;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.add-task {
+    text-align: center;
+    padding: 10px;
+}
+
+.add-task input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#btn-day,
+#btn-night {
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#btn-day {
+    background-color: #D63484;
+    margin-right: 10px;
+}
+
+#btn-night {
+    background-color: #512D6D;
+}
+
+
+/*------lista de tarefas-------*/
+.list-container h2 {
+    text-align: center;
+}
+
+.list-container {
+    margin: auto;
+    width: 90%;
+    height: 50%;
+}
+
+.task-table {
+    display: flex;
+    justify-content: center;
+}
+
+.day-list, 
+.night-list {
+    text-align: center;
+    width: 40%;
+    margin: 20px;
+    background-color: #fff;
+    border-width: 0px 3px 0px 3px;
+    border-style: dotted;
+    border-color: #D3D0E3;
+    min-height: 200px;
+}
+
+
+.day-list h3,
+.night-list h3 {
+    margin-top: 0;
+    padding: 20px 0;
+    background-color: #512D6D;
+    color: #fff;
+}
+
+.day-list h3 { background-color: #D63484;}
+
+
+input[type="checkbox"].task-checkbox:checked + label {
+    text-decoration: line-through;
+}
+
+ol { padding: 0;}
+
+ol li {
+    font-family: 'Short Stack', cursive;
+    padding: 0  10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: dotted #D3D0E3;
+}
+
+.deleteBtn {
+    cursor: pointer;
+    border-radius: 20px;
+    width: 38px;
+    height: 35px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.deleteBtn:hover {    background: #D3D0E3; }
+
+
+@media screen and (max-width: 1024px) {
+    body {
+        flex-direction: column;
+    }
+
+    .menu-profile {
+        padding: 0;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    figure { margin: 0; }
+    figure img { width: 150px;}
+    aside p { margin-bottom: 0px;}
+
+    .menu-profile {
+        width: 100%;
+    }
+
+
+    .task-table {
+            flex-direction: column;
+    }
+    .task-list {
+        width: 100%;
+    }
+    .day-list, 
+    .night-list {
+        width: 90%;
+    }
+
+
+}

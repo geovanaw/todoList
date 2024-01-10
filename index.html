@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <aside class="menu-profile">
+            <figure>
+                <img src="https://i.ibb.co/B6ywr5R/dayflow-avatar.png" alt="avatar genérico" border="0">
+                <h1>Nana</h1>
+            </figure>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto temporibus quasi nihil incidunt dolores, quibusdam, harum iste doloremque ducimus nesciunt esse quae error dignissimos a repellat qui, quia suscipit. Assumenda!</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href=”#” target="_blank">Link</a>
+                </li>
+                <li>
+                    <a href=”#” target="_blank">Link2</a>
+                </li>
+                <li>
+                    <a href=”#” target="_blank">Link3</a>
+                </li>
+                <li>
+                    <a href=”#” target="_blank">Link4</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="task-list">
+        <div class="list-container">
+            <div class="add-task">
+                <h2>Lista de Tarefas</h2>
+                
+                <input type="text"
+                id="input-new-task"
+                placeholder="Adicione uma nova tarefa"
+                maxlength="40"
+                >
+                <button 
+                onclick="addTask('day-list')" 
+                id="btn-day">
+                    Dia
+                </button>
+                <button 
+                onclick="addTask()" 
+                id="btn-night">
+                    Noite
+                </button>
+
+                
+            </div>
+
+            <div class="task-table">
+                <section class="day-list">
+                    <div class="title">
+                        <h3>Dia</h3>
+                    </div>
+
+                    <ol id="day-task"> 
+                    </ol>
+                </section>
+
+                <section class="night-list">
+                    <div class="title">
+                        <h3>Noite</h3>
+                    </div>
+
+                    <ol id="night-task"> </ol>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
