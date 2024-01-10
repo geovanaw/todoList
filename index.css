@@ -198,6 +198,7 @@ ol li {
     }
     .task-list {
         width: 100%;
+        height: 100%;
     }
     .day-list, 
     .night-list {
